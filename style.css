@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Styling the container */
+.user-container{
+font-family: 'Rubik', sans-serif;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  gap: 15px;
+  background-color: #27222c;
+  color:white;
+  display: flex;
+  width:430px;
+  letter-spacing: 2px;
+}
+
+/* Styling the body */
+
+body{
+   display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: #000007;
+}
+
+.btn-search{
+border-radius: 5px;
+background-color: rgb(142, 21, 212);
+color: white;
+font-family: 'Anton', sans-serif;
+letter-spacing: 1px;
+}
+
+.name{
+    width:450px;
+    border-radius: 3px;
+}
+
+.btn-search:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.reset{
+    border-radius: 5px;
+    background-color: rgb(142, 21, 212);
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+}
+.reset:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.brew-content{
+    display: block;
+}
+
+/* Styling the name color while hovering over it. */
+.brew-name:hover{
+    color: teal;
+}
+.brew-city:hover{
+    color: teal;
+}
+.brew-state:hover{
+    color: teal;
+}
+
+/* Styling the container while hovering it. */
+.user-container:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.heading{
+    font-family: 'Marck Script', cursive;
+  color:#ede7f8;
+  letter-spacing: 2px;
+}
+.usa{
+    font-family: 'Courgette', cursive;
+}
+
+.web{
+  color:orange;
+}
+/* Styling Button of pages*/
+.page-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px; /* To get rounded corner */
+    border: none;
+    outline: none;
+    margin: 20px 5px 20px 5px;
+    background-image: linear-gradient(to top, #156abe, #1a70c1, #2176c4, #277cc7, #2e82ca);
+    font-family: 'Otomanopee One', sans-serif;
+    
+  }
+  /* Styling page button to change background color of the button when hovered over*/
+  .page-button:hover{
+    background-image: linear-gradient(to top, #6baae9, #9598e4, #be83ce, #db6da7, #e46077);
+  }
+
+  /* Styling pages button to display at center*/
+.paginations{
+    margin-bottom:10px;
+    display:flex;
+    justify-content:center;
+  }
+
+  /* Styling according to device widths using Media Query*/
+@media (min-width:1200px) and (max-width:1600px){
+    .user-list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:25px;
+    }
+  }
+  
+  @media (min-width:900px) and (max-width:1200px){
+    .user-list{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      gap:20px;
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 900px){
+  .user-list , .user-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+    width:300px;
+    justify-content:center;
+    
+  }
+  }
